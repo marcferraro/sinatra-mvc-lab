@@ -2,12 +2,6 @@ class PigLatinizer
 
     attr_reader
 
-    # def initialize(text=nil)
-    #     if text != nil
-    #         @text = text.downcase
-    #     end
-    # end
-
     def piglatinize(text)
         split_text= text.split(/ /)
         # binding.pry
@@ -15,7 +9,6 @@ class PigLatinizer
         return array.join(" ")
         
     end
-
 
     def piglatinize_word(word)
         
@@ -47,7 +40,6 @@ class PigLatinizer
         else
             piglatinized_word
         end
-        # binding.pry
     end
 
 end
